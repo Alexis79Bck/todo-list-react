@@ -1,0 +1,55 @@
+@import 'normalize.css';
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  max-width: 1280px;
+  text-align: center;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url('./images/listing-poster-background.jpg');
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+#body {
+  height: 98vh;
+  
+}
+
+#footer {
+  text-align: center;
+  background-color: #1a237e; 
+  color: #fff; 
+  position: sticky; 
+}
+
+/*
+#top {
+  
+  text-align: center;
+  padding: 10px;
+  background-color: transparent; 
+  color: #000; 
+}
+
+
+ */
+
+

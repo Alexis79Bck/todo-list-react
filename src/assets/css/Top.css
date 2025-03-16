@@ -1,0 +1,48 @@
+.title {
+  position: relative;
+  border: none;
+  background: transparent;
+  --stroke-color: black;
+  --ani-color: rgba(95, 3, 244, 0);
+  --color-gar: linear-gradient(90deg, #0091d4, #d81b86, #ffeb3b, #0091d4,#2ab400,#9c0f26, #d81b86, #ffeb3b, #0091d4 );
+  letter-spacing: 3px;
+  font-size: 2em;
+  font-family: "Verdana";
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--stroke-color);
+  cursor: pointer;
+}
+
+
+.front-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--color-gar);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200%;
+  overflow: hidden;
+  transition: all 1s;
+  animation: 25s ani infinite;
+  border-bottom: 4px solid #03a9f4;
+  -webkit-text-stroke: 2px var(--ani-color);
+}
+
+
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  50% {
+    background-position: 500%;
+  }
+
+  100% {
+    background-position: 0%;
+  }
+}
