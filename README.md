@@ -1,4 +1,4 @@
-ToDoList con React, TypeScript, Vite y PrimeReact
+# ToDoList con React, TypeScript, Vite y PrimeReact
 
 Este proyecto es una aplicación ToDoList moderna y eficiente, construida con React, TypeScript, Vite y PrimeReact. Permite a los usuarios gestionar sus tareas de manera sencilla y organizada.
 
