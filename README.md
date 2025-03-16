@@ -1,54 +1,105 @@
-# React + TypeScript + Vite
+ToDoList con React, TypeScript, Vite y PrimeReact
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación ToDoList moderna y eficiente, construida con React, TypeScript, Vite y PrimeReact. Permite a los usuarios gestionar sus tareas de manera sencilla y organizada.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Creación de tareas:** Permite agregar nuevas tareas con facilidad.
+* **Marcado de tareas:** Permite marcar tareas como completadas.
+* **Edición de tareas:** Permite editar el texto de las tareas existentes.
+* **Eliminación de tareas:** Permite eliminar tareas de la lista.
+* **Filtrado de tareas:** Permite filtrar las tareas por estado (todas, pendientes, completadas) o por búsqueda de texto.
+* **Interfaz de usuario intuitiva:** Utiliza PrimeReact para una interfaz de usuario moderna y fácil de usar.
+* **Desarrollo rápido:** Vite asegura un desarrollo ágil con recarga instantánea.
+* **Código tipado:** TypeScript proporciona seguridad y mantenibilidad al código.
 
-## Expanding the ESLint configuration
+## Tecnologías utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* **React:** Biblioteca de JavaScript para construir interfaces de usuario.
+* **TypeScript:** Lenguaje de programación que añade tipos estáticos a JavaScript.
+* **Vite:** Herramienta de construcción que proporciona un entorno de desarrollo rápido.
+* **PrimeReact:** Conjunto de componentes de React para construir interfaces de usuario modernas.
+* **pnpm:** Gestor de paquetes.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Requisitos previos
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+* Node.js (versión 18 o superior)
+* pnpm (o npm, si prefieres)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Instalación
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1.  Clona el repositorio:
+
+    ```bash
+    git clone <URL_DEL_REPOSITORIO>
+    ```
+
+2.  Navega al directorio del proyecto:
+
+    ```bash
+    cd todo-list-react
+    ```
+
+3.  Instala las dependencias:
+
+    ```bash
+    pnpm install
+    ```
+
+    o si prefieres npm
+
+    ```bash
+    npm install
+    ```
+
+## Ejecución
+
+1.  Inicia el servidor de desarrollo:
+
+    ```bash
+    pnpm dev
+    ```
+
+    o si prefieres npm
+
+    ```bash
+    npm run dev
+    ```
+
+2.  Abre tu navegador en `http://localhost:5173`.
+
+## Construcción para producción
+
+1.  Construye la aplicación para producción:
+
+    ```bash
+    pnpm build
+    ```
+
+    o si prefieres npm
+
+    ```bash
+    npm run build
+    ```
+
+2.  Los archivos de producción se encontrarán en la carpeta `dist`.
+
+## Pruebas
+
+(En la rama "testing", se incluirán las instrucciones para ejecutar las pruebas)
+
+## Contribución
+
+Las contribuciones son bienvenidas. Si encuentras un error o tienes una sugerencia, por favor abre un issue o envía un pull request.
+
+## Licencia
+
+Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+## Autor
+
+* Alexis E. Mata
+
+## Versión
+
+* 1.0.0-2025
